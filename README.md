@@ -1,2 +1,2 @@
-# TestBot
+# LunaBot
 Test LunaBot
