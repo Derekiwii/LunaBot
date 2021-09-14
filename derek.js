@@ -68,7 +68,7 @@ const isCmd = budy.startsWith(prefix)
 const q = args.join(' ')
 const soyYo = client.user.jid
 const botNumber = client.user.jid.split("@")[0]
-const ownerNumber = ['########@s.whatsapp.net']
+const ownerNumber = ['5215627905793@s.whatsapp.net']
 const isGroup = from.endsWith('@g.us')
 const sender = sam.key.fromMe ? client.user.jid : isGroup ? sam.participant : sam.key.remoteJid
 const senderNumber = sender.split("@")[0]
@@ -79,8 +79,25 @@ const pushname = sam.key.fromMe ? client.user.name : conts.notify || conts.vname
 switch (command) {
 
 case 'bot':
-client.sendMessage(from, 'Hola,felicidades, has logrado enviar un mensaje mediante un servidor externo😚', text, {quoted : sam})
+client.sendMessage(from, 'Solo soy un bot, no puedo mantener conversaciones con personas reales T-T', text, {quoted : sam})
 break
+
+case 'hola':
+        case 'ola':
+        case 'buenas':
+        case 'hi':
+        case 'helou':
+        case 'wenas':                
+client.sendMessage(from, 'Hola!! ¿Qúe tal estas? :3', text, {quoted : sam})
+break
+
+case 'bye':
+        case 'adiós':
+        case 'ya me voy':
+        case 'chao':
+        case 'adios':
+client.sendMessage(from, 'Hasta luego! Vuelve pronto UnU', text, {quoted : sam})
+break                
                 
 }
 
