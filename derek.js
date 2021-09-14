@@ -21,7 +21,7 @@ async function iniciar () {
 
 //La conexión fue en éxito👌🏻
         client.on('open', () => {
-        console.log('Conectado exitosamente :D')
+        console.log('Conectado exitosamente 7u7')
         })
         await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./Samu330.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
