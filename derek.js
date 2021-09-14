@@ -81,14 +81,6 @@ switch (command) {
 
 case 'bot':
 client.sendMessage(from, 'Soy un bot y lamentablemente no puedo mantener una conversación con personas reales T-T', text, {quoted : sam})
-break
-
-case 'hola':
-client.sendMessage(from, 'Hola!! ¿Qué tal estas? :3', text, {quoted : sam})
-break
-
-case 'bye':
-client.sendMessage(from, 'Hasta luego! Vuele pronto UnU', text, {quoted : sam})
 break                
                 
 }
