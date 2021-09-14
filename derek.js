@@ -1,7 +1,7 @@
 
 const { WAConnection, MessageType } = require('@adiwajshing/baileys');
 const fs = require('fs');
-const prefix = '.'
+const prefix = '#'
 
 async function iniciar () { 
         const client = new WAConnection()
@@ -20,9 +20,9 @@ async function iniciar () {
         console.log('Conectando')
         })
 
-//La conexión fue en éxito👌🏻
+//La conexión fue un éxito 7u7
         client.on('open', () => {
-        console.log('Conectado exitosamente :D')
+        console.log('Conectado exitosamente 7u7')
         })
         await client.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./Samu330.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
@@ -69,7 +69,7 @@ const isCmd = budy.startsWith(prefix)
 const q = args.join(' ')
 const soyYo = client.user.jid
 const botNumber = client.user.jid.split("@")[0]
-const ownerNumber = ['########@s.whatsapp.net']
+const ownerNumber = ['5215627905793@s.whatsapp.net']
 const isGroup = from.endsWith('@g.us')
 const sender = sam.key.fromMe ? client.user.jid : isGroup ? sam.participant : sam.key.remoteJid
 const senderNumber = sender.split("@")[0]
@@ -80,8 +80,16 @@ const pushname = sam.key.fromMe ? client.user.name : conts.notify || conts.vname
 switch (command) {
 
 case 'bot':
-client.sendMessage(from, 'Hola,felicidades, has logrado enviar un mensaje mediante un servidor externo😚', text, {quoted : sam})
+client.sendMessage(from, 'Soy un bot y lamentablemente no puedo mantener una conversación con personas reales T-T', text, {quoted : sam})
 break
+
+case 'hola':
+client.sendMessage(from, 'Hola!! ¿Qué tal estas? :3', text, {quoted : sam})
+break
+
+case 'bye':
+client.sendMessage(from, 'Hasta luego! Vuele pronto UnU', text, {quoted : sam})
+break                
                 
 }
 
