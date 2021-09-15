@@ -2,9 +2,9 @@
   "name": "LunaBot",
   "version": "1.0.0",
   "description": "Test de bot",
-  "main": "derek.js",
+  "main": "index.js",
   "scripts": {
-  "start": "node derek.js"
+  "start": "node index.js"
   },
   "dependencies": {
     "@adiwajshing/baileys": "^3.4.1"
