@@ -81,6 +81,8 @@ switch (command) {
 case 'bot':
 client.sendMessage(from, 'Solo soy un bot, no puedo mantener conversaciones con personas reales T-T', text, {quoted : sam})
 break                
+
+                
                 
 }
 
