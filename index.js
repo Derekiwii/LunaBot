@@ -88,13 +88,19 @@ client.sendMessage(from, imagen, MessageType.image)
 break 
 
 case 'video':
-const video = fs.readFileSync('video.mp4')
-client.sendMessage(from, video, MessageType.video)
+const video = fs.readFileSync('./media/video.mp4')
+client.sendMessage(from, video, MessageType.video,
+{quoted: sam, mimetype: 'video/mp4'})
 break 
 
+case 'info':
+client.sendMessage(from, 'Este bot es una beta, no está terminado aún UnU', text, {quoted : sam})
+break                
+                
 case 'audio':
-const audio = fs.readFileSync('audio.mp3')
-client.sendMessage(from, audio, MessageType.audio)
+const audio = fs.readFileSync('./media/audio.mp3')
+client.sendMessage(from, audio, MessageType.audio,
+{quoted: sam, mimetype: 'audio/mp3'})
 break                
 }
 
