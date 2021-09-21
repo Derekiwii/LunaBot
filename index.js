@@ -81,9 +81,21 @@ switch (command) {
 case 'bot':
 client.sendMessage(from, 'Solo soy un bot, no puedo mantener conversaciones con personas reales T-T', text, {quoted : sam})
 break                
+              
+case 'imagen':
+const imagen = fs.readFileSync('imagen.png')
+client.sendMessage(from, imagen, MessageType.image)
+break 
 
-                
-                
+case 'video':
+const video = fs.readFileSync('video.mp4')
+client.sendMessage(from, video, MessageType.video)
+break 
+
+case 'audio':
+const audio = fs.readFileSync('audio.mp3')
+client.sendMessage(from, audio, MessageType.audio)
+break                
 }
 
 } catch (e) {
