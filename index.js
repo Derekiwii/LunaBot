@@ -83,7 +83,7 @@ client.sendMessage(from, 'Solo soy un bot, no puedo mantener conversaciones con 
 break                
               
 case 'imagen':
-const imagen = fs.readFileSync('imagen.png')
+const imagen = fs.readFileSync('./media/imagen.png')
 client.sendMessage(from, imagen, MessageType.image)
 break 
 
